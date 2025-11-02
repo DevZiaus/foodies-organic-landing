@@ -96,7 +96,7 @@ foodies-landing/
 1. **Clone or download** this repository:
 
     ```bash
-    git clone https://github.com/yourusername/foodies-landing.git
+    git clone https://github.com/DevZiaus/foodies-organic-landing.git
     ```
 
 2. **Open** `index.html` directly in your browser, or start a local server:
