@@ -84,7 +84,7 @@ foodies-landing/
 │ ├── hero-image.png
 │ ├── brand-1.png
 │ ├── ...
-│ └── preview.jpg
+│ └── preview.png
 └── README.md
 
 ```
@@ -99,9 +99,9 @@ foodies-landing/
     git clone https://github.com/DevZiaus/foodies-organic-landing.git
     ```
 
-2. **Open** `index.html` directly in your browser, or start a local server:
+2. **Open** `index.html` directly in your browser, or start a local server using VS Code Extension 'Live Server':
 
-    Visit: [http://localhost:3000](http://localhost:3000)
+    Visit: [http://localhost:5500](http://localhost:5500)
 
 That’s it! No build tools or dependencies required.
 
