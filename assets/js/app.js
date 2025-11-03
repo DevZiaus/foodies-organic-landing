@@ -9,11 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
         toggle.setAttribute("aria-expanded", expanded);
     });
 
-    // Close nav when clicking a link (on mobile)
-    link.addEventListener("click", () => {
-        toggle.classList.remove("toggled");
-        nav.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
+    // Close menu on link click
+    nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            toggle.classList.remove("toggled");
+            nav.classList.remove("open");
+            toggle.setAttribute("aria-expanded", false);
+        });
     });
 
     // Menu Link Active State Management
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Optional: close on Escape key
+    // Close on Escape key
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
             toggle.classList.remove("toggled");
@@ -37,6 +39,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set current year in footer
     const currentYear = new Date().getFullYear();
-    document.querySelector("footer-bottom .current-year").textContent =
-        currentYear;
+    document.querySelector(".current-year").textContent = currentYear;
 });
